@@ -286,7 +286,7 @@ scikit-learn
 
 ## 👩‍💻 Author
 
-**Shivani**
+**Shivani Patil**
 
 Machine Learning | Python | Data Science | AI
 

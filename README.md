@@ -33,15 +33,9 @@ The trained model and scaler are saved as `.pkl` files and loaded by the Streaml
 
 🚀 **Try the application online:**
 
-👉 [**Live Demo – Social Network Ads Purchase Prediction**](YOUR_DEPLOYED_STREAMLIT_URL)
+👉 [**Live Demo – Social Network Ads Purchase Prediction**](http://localhost:8501)
 
 > Replace `YOUR_DEPLOYED_STREAMLIT_URL` with your actual Streamlit deployment URL.
-
-Example:
-
-```text
-https://your-app-name.streamlit.app
-```
 
 ---
 
@@ -50,7 +44,7 @@ https://your-app-name.streamlit.app
 ### Streamlit Application Output
 
 <p align="center">
-  <img src="screenshots/app.png"
+  <img src="app-interface.png"
        alt="Social Network Ads Purchase Prediction Streamlit Output"
        width="800">
 </p>

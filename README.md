@@ -2,7 +2,9 @@
 
 ### K-Nearest Neighbors (KNN) | Machine Learning | Streamlit
 
-A professional **Machine Learning web application** that predicts whether a customer is likely to purchase a product after viewing a social network advertisement. The project uses the **K-Nearest Neighbors (KNN)** algorithm with **feature scaling** and provides an interactive prediction interface built with **Streamlit**.
+A professional **Machine Learning web application** that predicts whether a customer is likely to purchase a product after viewing a social network advertisement.
+
+The project uses the **K-Nearest Neighbors (KNN)** algorithm with **feature scaling** and provides an interactive prediction interface built with **Streamlit**.
 
 ---
 
@@ -16,12 +18,44 @@ The model uses the following customer features:
 * **Age**
 * **Estimated Salary**
 
-A **StandardScaler** is used to scale the numerical features before making predictions. The trained KNN model then classifies the customer into one of two categories:
+A **StandardScaler** is used to scale the numerical features before making predictions.
+
+The trained KNN model classifies the customer into one of two categories:
 
 * **0 → Not Purchased**
 * **1 → Purchased**
 
 The trained model and scaler are saved as `.pkl` files and loaded by the Streamlit application.
+
+---
+
+## 🌐 Live Demo
+
+🚀 **Try the application online:**
+
+👉 [**Live Demo – Social Network Ads Purchase Prediction**](YOUR_DEPLOYED_STREAMLIT_URL)
+
+> Replace `YOUR_DEPLOYED_STREAMLIT_URL` with your actual Streamlit deployment URL.
+
+Example:
+
+```text
+https://your-app-name.streamlit.app
+```
+
+---
+
+## 📸 Application Screenshot
+
+### Streamlit Application Output
+
+<p align="center">
+  <img src="screenshots/app.png"
+       alt="Social Network Ads Purchase Prediction Streamlit Output"
+       width="800">
+</p>
+
+The screenshot above shows the Streamlit application interface and prediction output.
 
 ---
 
@@ -52,15 +86,15 @@ The trained model and scaler are saved as `.pkl` files and loaded by the Streaml
 
 ## 🤖 Machine Learning Model
 
-| Parameter           | Details                       |
-| ------------------- | ----------------------------- |
-| Algorithm           | K-Nearest Neighbors (KNN)     |
-| Number of Neighbors | 5                             |
-| Preprocessing       | StandardScaler                |
-| Problem Type        | Binary Classification         |
-| Input Features      | Gender, Age, Estimated Salary |
-| Test Accuracy       | **92.5%**                     |
-| Output              | Purchased / Not Purchased     |
+| Parameter               | Details                       |
+| ----------------------- | ----------------------------- |
+| **Algorithm**           | K-Nearest Neighbors (KNN)     |
+| **Number of Neighbors** | 5                             |
+| **Preprocessing**       | StandardScaler                |
+| **Problem Type**        | Binary Classification         |
+| **Input Features**      | Gender, Age, Estimated Salary |
+| **Test Accuracy**       | **92.5%**                     |
+| **Output**              | Purchased / Not Purchased     |
 
 ---
 
@@ -70,13 +104,13 @@ The project is based on the **Social Network Ads** dataset.
 
 ### Dataset Features
 
-| Feature         | Description                |
-| --------------- | -------------------------- |
-| User ID         | Unique customer identifier |
-| Gender          | Customer gender            |
-| Age             | Customer age               |
-| EstimatedSalary | Estimated customer salary  |
-| Purchased       | Purchase decision          |
+| Feature           | Description                |
+| ----------------- | -------------------------- |
+| `User ID`         | Unique customer identifier |
+| `Gender`          | Customer gender            |
+| `Age`             | Customer age               |
+| `EstimatedSalary` | Estimated customer salary  |
+| `Purchased`       | Purchase decision          |
 
 The `Purchased` column is the target variable.
 
@@ -113,7 +147,10 @@ Purchase Prediction
 ## 📂 Repository Structure
 
 ```text
-social-network-ads-knn/
+social-network-ads-purchase-prediction/
+│
+├── screenshots/
+│   └── app.png
 │
 ├── app.py
 ├── knn_with_scaling.pkl
@@ -124,13 +161,15 @@ social-network-ads-knn/
 
 ### File Description
 
-| File                   | Description               |
-| ---------------------- | ------------------------- |
-| `app.py`               | Streamlit application     |
-| `knn_with_scaling.pkl` | Trained KNN model         |
-| `scaler.pkl`           | Saved StandardScaler      |
-| `requirements.txt`     | Required Python libraries |
-| `README.md`            | Project documentation     |
+| File / Folder          | Description                             |
+| ---------------------- | --------------------------------------- |
+| `app.py`               | Streamlit application                   |
+| `knn_with_scaling.pkl` | Trained KNN model                       |
+| `scaler.pkl`           | Saved StandardScaler                    |
+| `requirements.txt`     | Required Python libraries               |
+| `screenshots/`         | Project screenshots                     |
+| `screenshots/app.png`  | Streamlit application output screenshot |
+| `README.md`            | Project documentation                   |
 
 ---
 
@@ -151,13 +190,13 @@ social-network-ads-knn/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/social-network-ads-knn.git
+git clone https://github.com/shivani14012004/social-network-ads-purchase-prediction.git
 ```
 
 ### 2. Navigate to the Project Folder
 
 ```bash
-cd social-network-ads-knn
+cd social-network-ads-purchase-prediction
 ```
 
 ### 3. Install Required Libraries
@@ -185,7 +224,7 @@ http://localhost:8501
 1. Open the Streamlit application.
 2. Select the customer's **Gender**.
 3. Enter the customer's **Age**.
-4. Enter the **Estimated Salary**.
+4. Enter the customer's **Estimated Salary**.
 5. Click the **Predict** button.
 6. The application displays whether the customer is likely to purchase the product.
 
@@ -195,10 +234,10 @@ http://localhost:8501
 
 The KNN model was evaluated with and without feature scaling.
 
-| Model               |  Accuracy |
-| ------------------- | --------: |
-| KNN without Scaling | **82.5%** |
-| KNN with Scaling    | **92.5%** |
+| Model                |  Accuracy |
+| -------------------- | --------: |
+| KNN without Scaling  | **82.5%** |
+| **KNN with Scaling** | **92.5%** |
 
 ### 📌 Result
 
@@ -218,50 +257,40 @@ In this project, `StandardScaler` is used before prediction.
 
 ---
 
-## 🌐 Deployment
+## 🚀 Deployment
 
-This Streamlit application can be deployed using platforms such as:
+The Streamlit application can be deployed using platforms such as:
 
-* Streamlit Community Cloud
-* Render
-* Hugging Face Spaces
+* **Streamlit Community Cloud**
+* **Render**
+* **Hugging Face Spaces**
 
-After deployment, add your live application URL to this README.
+### 🌐 Live Application
 
-```text
-Live Demo: YOUR_DEPLOYED_APP_URL
-```
+👉 [**Open Live Demo**](http://localhost:8501)
+
+After deployment, replace `YOUR_DEPLOYED_STREAMLIT_URL` with your actual application URL.
 
 ---
 
-## 📸 Application Preview
+## 📸 Screenshots
 
-Add screenshots of your Streamlit application here:
-
-```markdown
-![Application Screenshot](screenshots/app.png)
-```
-
-Recommended repository structure:
+The project screenshots are stored inside the existing `screenshots/` folder.
 
 ```text
-social-network-ads-knn/
-│
-├── screenshots/
-│   └── app.png
-│
-├── app.py
-├── knn_with_scaling.pkl
-├── scaler.pkl
-├── requirements.txt
-└── README.md
+screenshots/
+└── app-interface.png
+    prediction-result.png
+
 ```
+
+The main application screenshot is displayed above in the **Application Screenshot** section.
 
 ---
 
 ## 📦 Requirements
 
-Example `requirements.txt`:
+The project requires the following Python libraries:
 
 ```text
 streamlit
@@ -269,6 +298,21 @@ pandas
 numpy
 scikit-learn
 ```
+
+---
+
+## 🎓 Key Learning Outcomes
+
+Through this project, I learned:
+
+* Data preprocessing using Pandas.
+* Feature scaling using `StandardScaler`.
+* Implementing K-Nearest Neighbors.
+* Comparing KNN performance with and without scaling.
+* Evaluating classification models.
+* Saving trained models using Pickle.
+* Building an interactive Machine Learning application using Streamlit.
+* Managing and documenting Machine Learning projects using GitHub.
 
 ---
 
@@ -286,7 +330,10 @@ scikit-learn
 
 ## 👩‍💻 Author
 
-**Shivani Patil**
+**Shivani**
 
 Machine Learning | Python | Data Science | AI
 
+---
+
+⭐ **If you found this project useful, consider giving the repository a star!**

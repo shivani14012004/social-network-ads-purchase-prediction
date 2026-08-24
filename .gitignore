@@ -1,0 +1,14 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python cache & bytecode
+__pycache__/
+*.pyc
+
+# Environment variable configuration files
+.env
+
+# Model binary files (Optional: omit if you want to track model artifacts in Git)
+# *.pkl

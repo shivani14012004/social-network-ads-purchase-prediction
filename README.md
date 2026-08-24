@@ -280,7 +280,6 @@ The project screenshots are stored inside the existing `screenshots/` folder.
 ```text
 screenshots/
 └── app-interface.png
-    prediction-result.png
 
 ```
 

@@ -312,5 +312,4 @@ Machine Learning | Python | Data Science | AI
 
 If you found this project useful, consider giving the repository a ⭐ on GitHub.
 
-**Repository:**
-https://github.com/shivani14012004/social-network-ads-purchase-prediction
+

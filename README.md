@@ -289,7 +289,7 @@ This application can be deployed using:
 
 ### 🌐 Deployed Application
 
-**Live Demo:** [Open the deployed application]( http://localhost:8501)
+**Live Demo:** [Open the deployed application](http://localhost:8501)
 
 ---
 

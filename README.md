@@ -267,7 +267,7 @@ http://localhost:8501
 
 ### Application Interface
 
-![Streamlit Application](screenshots/app-interface.png)
+![Streamlit Application](app-interface.png)
 
 > You can add more screenshots to the `screenshots` folder and display them here using the same format.
 

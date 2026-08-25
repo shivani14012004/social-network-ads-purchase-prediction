@@ -2,68 +2,46 @@
 
 ### K-Nearest Neighbors (KNN) | Machine Learning | Streamlit
 
-A Machine Learning web application that predicts whether a customer is likely to purchase a product after viewing a social network advertisement.
+A Machine Learning project that predicts whether a customer is likely to purchase a product after viewing a social network advertisement.
 
-The project uses the **K-Nearest Neighbors (KNN)** classification algorithm with **feature scaling** and provides an interactive prediction interface using **Streamlit**.
-
----
-
-## 🌐 Live Demo
-
-🚀 **Try the application online:**
-
-👉 **[Live Demo – Social Network Ads Purchase Prediction](http://localhost:8501)**
-
-> ⚠️ Replace `YOUR_LIVE_STREAMLIT_URL` with your actual deployed Streamlit application URL.
-
-Example:
-
-```text
-https://your-app-name.streamlit.app
-```
-
----
-
-## 📸 Application Screenshot
-
-### Streamlit Application
-
-![Streamlit Application Screenshot](screenshots/app-interface.png)
-
-The screenshot above shows the interactive Streamlit application and its prediction interface.
+The project uses the **K-Nearest Neighbors (KNN)** algorithm with feature scaling and provides an interactive prediction interface built using **Streamlit**.
 
 ---
 
 ## 📌 Project Overview
 
-The goal of this project is to predict whether a customer will purchase a product after viewing a social network advertisement.
+The goal of this project is to predict customer purchase behavior based on demographic and salary information.
 
-The model uses customer information such as:
+The model uses the following features:
 
 * Gender
 * Age
 * Estimated Salary
 
-The target variable is:
+The numerical features are scaled using **StandardScaler** before applying the KNN algorithm.
+
+The model predicts one of two outcomes:
 
 * `0` → Not Purchased
 * `1` → Purchased
 
-Feature scaling is performed using **StandardScaler** before applying the KNN algorithm.
+The trained KNN model and scaler are saved as `.pkl` files and used by the Streamlit application.
 
 ---
 
 ## 🎯 Project Objectives
 
-* Analyze customer purchase behavior
-* Perform data preprocessing
-* Apply feature scaling
-* Build a K-Nearest Neighbors classification model
-* Compare KNN performance with and without scaling
-* Save the trained machine learning model
-* Build an interactive Streamlit application
-* Make real-time purchase predictions
-* Deploy the application online
+The main objectives of this project are:
+
+* Analyze customer purchase behavior.
+* Perform data preprocessing.
+* Apply feature scaling.
+* Build a K-Nearest Neighbors classification model.
+* Compare KNN performance with and without scaling.
+* Evaluate model performance.
+* Save the trained model using Pickle.
+* Build an interactive Streamlit application.
+* Make real-time purchase predictions.
 
 ---
 
@@ -73,20 +51,27 @@ Feature scaling is performed using **StandardScaler** before applying the KNN al
 * ✅ Gender selection
 * ✅ Age input
 * ✅ Estimated Salary input
-* ✅ Real-time prediction
-* ✅ KNN classification
-* ✅ StandardScaler preprocessing
-* ✅ Pre-trained machine learning model
+* ✅ Feature scaling using `StandardScaler`
+* ✅ Pre-trained KNN model
+* ✅ Real-time purchase prediction
 * ✅ User-friendly interface
-* ✅ Approximately **92.5% test accuracy**
+* ✅ 92.5% test accuracy
 
 ---
 
 ## 🤖 Machine Learning Model
 
-| Parameter           | Details                       |
+### K-Nearest Neighbors (KNN)
+
+KNN is a supervised Machine Learning classification algorithm that predicts the class of a new data point based on its nearest neighboring data points.
+
+Since KNN is a distance-based algorithm, feature scaling is important when the input features have different numerical ranges.
+
+### Model Configuration
+
+| Parameter           | Value                         |
 | ------------------- | ----------------------------- |
-| Algorithm           | K-Nearest Neighbors (KNN)     |
+| Algorithm           | K-Nearest Neighbors           |
 | Number of Neighbors | 5                             |
 | Preprocessing       | StandardScaler                |
 | Problem Type        | Binary Classification         |
@@ -148,26 +133,26 @@ The KNN model was evaluated with and without feature scaling.
 
 | Model               |  Accuracy |
 | ------------------- | --------: |
-| KNN without Scaling |     82.5% |
-| KNN with Scaling    | **92.5%** |
+| KNN Without Scaling |     82.5% |
+| KNN With Scaling    | **92.5%** |
 
-### Result
+### 🏆 Result
 
-Feature scaling improved the model accuracy from **82.5% to 92.5%**.
+Feature scaling improved the KNN model's accuracy from **82.5% to 92.5%**.
 
 This demonstrates the importance of feature scaling for distance-based algorithms such as KNN.
 
 ---
 
-## 💡 Why KNN?
+## 📸 Project Screenshot
 
-K-Nearest Neighbors is a supervised machine learning algorithm used for classification.
+The Streamlit application screenshot is available in the `screenshots` folder of this repository.
 
-KNN predicts the class of a new data point based on the classes of its nearest neighboring data points.
+### Streamlit Application
 
-Since KNN calculates distances between data points, feature scaling is important when the features have different numerical ranges.
+Click the screenshot below to open the **full-size image**.
 
-In this project, `StandardScaler` is used before making predictions.
+[![Social Network Ads Purchase Prediction](https://github.com/shivani14012004/social-network-ads-purchase-prediction/blob/main/screenshots/app-interface.png?raw=true)](https://github.com/shivani14012004/social-network-ads-purchase-prediction/blob/main/screenshots/app-interface.png)
 
 ---
 
@@ -177,7 +162,7 @@ In this project, `StandardScaler` is used before making predictions.
 social-network-ads-purchase-prediction/
 │
 ├── screenshots/
-│   └── app.png
+│   └── app-interface.png
 │
 ├── app.py
 ├── Social_Net_class.csv
@@ -185,8 +170,8 @@ social-network-ads-purchase-prediction/
 ├── knn_without_scaling.pkl
 ├── scaler.pkl
 ├── requirements.txt
-├── .gitignore
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ### File Description
@@ -194,27 +179,27 @@ social-network-ads-purchase-prediction/
 | File / Folder             | Description                    |
 | ------------------------- | ------------------------------ |
 | `app.py`                  | Streamlit application          |
-| `Social_Net_class.csv`    | Dataset                        |
+| `Social_Net_class.csv`    | Social Network Ads dataset     |
 | `knn_with_scaling.pkl`    | Trained KNN model with scaling |
 | `knn_without_scaling.pkl` | KNN model without scaling      |
 | `scaler.pkl`              | Saved StandardScaler           |
 | `requirements.txt`        | Required Python libraries      |
-| `screenshots/`            | Application screenshots        |
+| `screenshots/`            | Project screenshots            |
 | `README.md`               | Project documentation          |
-| `.gitignore`              | Files excluded from GitHub     |
+| `.gitignore`              | Git ignored files              |
 
 ---
 
 ## 🛠️ Technologies Used
 
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* Streamlit
-* Pickle
-* Git
-* GitHub
+* **Python**
+* **Pandas**
+* **NumPy**
+* **Scikit-learn**
+* **Streamlit**
+* **Pickle**
+* **Git**
+* **GitHub**
 
 ---
 
@@ -244,7 +229,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The application will open locally at:
+The application will open in your browser at:
 
 ```text
 http://localhost:8501
@@ -255,53 +240,63 @@ http://localhost:8501
 ## 🖥️ How to Use the Application
 
 1. Open the Streamlit application.
-2. Select the customer's gender.
-3. Enter the customer's age.
-4. Enter the estimated salary.
+2. Select the customer's Gender.
+3. Enter the customer's Age.
+4. Enter the Estimated Salary.
 5. Click the **Predict** button.
-6. The application displays the predicted purchase result.
+6. The application displays whether the customer is likely to purchase the product.
 
 ---
 
-## 📸 Project Screenshots
+## 🔮 Example Prediction
 
-### Application Interface
+### Input
 
-![Streamlit Application](app-interface.png)
-
-> You can add more screenshots to the `screenshots` folder and display them here using the same format.
-
-Example:
-
-```markdown
-![Prediction Result](screenshots/prediction.png)
+```text
+Gender = Female
+Age = 35
+Estimated Salary = 70000
 ```
 
----
+### Output
 
-## 🚀 Deployment
+```text
+Purchased
+```
 
-This application can be deployed using:
-
-* Streamlit Community Cloud
-* Render
-* Hugging Face Spaces
-
-### 🌐 Deployed Application
-
-**Live Demo:** [Open the deployed application](http://localhost:8501)
+The actual prediction depends on the trained KNN model.
 
 ---
 
-## 🔮 Future Improvements
+## 🎓 Key Learning Outcomes
 
-* Add more machine learning algorithms
-* Improve model performance through hyperparameter tuning
-* Add confusion matrix visualization
-* Add prediction probability
-* Improve the Streamlit UI
-* Add interactive data visualizations
-* Deploy with a custom domain
+Through this project, I learned:
+
+* Data preprocessing using Pandas
+* Feature selection
+* Feature scaling using `StandardScaler`
+* K-Nearest Neighbors classification
+* Comparing models with and without scaling
+* Model evaluation
+* Saving Machine Learning models using Pickle
+* Building interactive applications using Streamlit
+* Managing Machine Learning projects using GitHub
+
+---
+
+## 🚀 Future Improvements
+
+Possible improvements include:
+
+* Add more customer-related features.
+* Improve the Streamlit user interface.
+* Display prediction probabilities.
+* Add interactive data visualizations.
+* Compare KNN with Logistic Regression.
+* Compare KNN with Decision Tree and Random Forest.
+* Add model performance charts.
+* Improve model hyperparameter tuning.
+* Deploy the application online.
 
 ---
 
@@ -309,12 +304,13 @@ This application can be deployed using:
 
 **Shivani Patil**
 
-GitHub: [@shivani14012004](https://github.com/shivani14012004)
+Machine Learning | Python | Data Science | AI
 
 ---
 
 ## ⭐ Support
 
-If you find this project useful, consider giving the repository a ⭐ on GitHub.
+If you found this project useful, consider giving the repository a ⭐ on GitHub.
 
-**Thank you for visiting this project!**
+**Repository:**
+https://github.com/shivani14012004/social-network-ads-purchase-prediction

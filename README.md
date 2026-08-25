@@ -4,15 +4,15 @@
 
 A Machine Learning project that predicts whether a customer is likely to purchase a product after viewing a social network advertisement.
 
-The project uses the **K-Nearest Neighbors (KNN)** algorithm with feature scaling and provides an interactive prediction interface built using **Streamlit**.
+The project uses the **K-Nearest Neighbors (KNN)** algorithm with feature scaling and an interactive **Streamlit** application for real-time prediction.
 
 ---
 
 ## 📌 Project Overview
 
-The goal of this project is to predict customer purchase behavior based on demographic and salary information.
+The objective of this project is to predict customer purchase behavior based on demographic and salary information.
 
-The model uses the following features:
+The model uses:
 
 * Gender
 * Age
@@ -20,18 +20,16 @@ The model uses the following features:
 
 The numerical features are scaled using **StandardScaler** before applying the KNN algorithm.
 
-The model predicts one of two outcomes:
+The model predicts two outcomes:
 
 * `0` → Not Purchased
 * `1` → Purchased
 
-The trained KNN model and scaler are saved as `.pkl` files and used by the Streamlit application.
+The trained Machine Learning models and scaler are saved as `.pkl` files and used by the Streamlit application.
 
 ---
 
 ## 🎯 Project Objectives
-
-The main objectives of this project are:
 
 * Analyze customer purchase behavior.
 * Perform data preprocessing.
@@ -39,7 +37,7 @@ The main objectives of this project are:
 * Build a K-Nearest Neighbors classification model.
 * Compare KNN performance with and without scaling.
 * Evaluate model performance.
-* Save the trained model using Pickle.
+* Save trained models using Pickle.
 * Build an interactive Streamlit application.
 * Make real-time purchase predictions.
 
@@ -51,8 +49,8 @@ The main objectives of this project are:
 * ✅ Gender selection
 * ✅ Age input
 * ✅ Estimated Salary input
-* ✅ Feature scaling using `StandardScaler`
-* ✅ Pre-trained KNN model
+* ✅ StandardScaler feature scaling
+* ✅ KNN classification
 * ✅ Real-time purchase prediction
 * ✅ User-friendly interface
 * ✅ 92.5% test accuracy
@@ -65,7 +63,7 @@ The main objectives of this project are:
 
 KNN is a supervised Machine Learning classification algorithm that predicts the class of a new data point based on its nearest neighboring data points.
 
-Since KNN is a distance-based algorithm, feature scaling is important when the input features have different numerical ranges.
+Because KNN is a distance-based algorithm, feature scaling is important when the input features have different numerical ranges.
 
 ### Model Configuration
 
@@ -138,21 +136,21 @@ The KNN model was evaluated with and without feature scaling.
 
 ### 🏆 Result
 
-Feature scaling improved the KNN model's accuracy from **82.5% to 92.5%**.
+Feature scaling improved the KNN model accuracy from **82.5% to 92.5%**.
 
-This demonstrates the importance of feature scaling for distance-based algorithms such as KNN.
+This demonstrates the importance of feature scaling for distance-based Machine Learning algorithms such as KNN.
 
 ---
 
 ## 📸 Project Screenshot
 
-The Streamlit application screenshot is available in the `screenshots` folder of this repository.
+The Streamlit application screenshot is stored in the **`screenshot`** folder.
 
 ### Streamlit Application
 
 Click the screenshot below to open the **full-size image**.
 
-[![Social Network Ads Purchase Prediction](https://github.com/shivani14012004/social-network-ads-purchase-prediction/blob/main/screenshots/app-interface.png?raw=true)](https://github.com/shivani14012004/social-network-ads-purchase-prediction/blob/main/screenshots/app-interface.png)
+[![Social Network Ads Purchase Prediction](https://github.com/shivani14012004/social-network-ads-purchase-prediction/blob/main/screenshot/app.interface.png?raw=true)](https://github.com/shivani14012004/social-network-ads-purchase-prediction/blob/main/screenshot/app.interface.png)
 
 ---
 
@@ -161,15 +159,15 @@ Click the screenshot below to open the **full-size image**.
 ```text
 social-network-ads-purchase-prediction/
 │
-├── screenshots/
-│   └── app-interface.png
+├── screenshot/
+│   └── app.interface.png
 │
 ├── app.py
 ├── Social_Net_class.csv
 ├── knn_with_scaling.pkl
 ├── knn_without_scaling.pkl
-├── scaler.pkl
 ├── requirements.txt
+├── scaler.pkl
 ├── README.md
 └── .gitignore
 ```
@@ -184,7 +182,7 @@ social-network-ads-purchase-prediction/
 | `knn_without_scaling.pkl` | KNN model without scaling      |
 | `scaler.pkl`              | Saved StandardScaler           |
 | `requirements.txt`        | Required Python libraries      |
-| `screenshots/`            | Project screenshots            |
+| `screenshot/`             | Project screenshot             |
 | `README.md`               | Project documentation          |
 | `.gitignore`              | Git ignored files              |
 
@@ -244,7 +242,7 @@ http://localhost:8501
 3. Enter the customer's Age.
 4. Enter the Estimated Salary.
 5. Click the **Predict** button.
-6. The application displays whether the customer is likely to purchase the product.
+6. The application displays the predicted purchase result.
 
 ---
 
@@ -270,13 +268,13 @@ The actual prediction depends on the trained KNN model.
 
 ## 🎓 Key Learning Outcomes
 
-Through this project, I learned:
+Through this project, I practiced:
 
 * Data preprocessing using Pandas
 * Feature selection
 * Feature scaling using `StandardScaler`
 * K-Nearest Neighbors classification
-* Comparing models with and without scaling
+* Model comparison
 * Model evaluation
 * Saving Machine Learning models using Pickle
 * Building interactive applications using Streamlit
@@ -295,8 +293,8 @@ Possible improvements include:
 * Compare KNN with Logistic Regression.
 * Compare KNN with Decision Tree and Random Forest.
 * Add model performance charts.
-* Improve model hyperparameter tuning.
-* Deploy the application online.
+* Perform hyperparameter tuning.
+* Add cross-validation.
 
 ---
 
@@ -311,5 +309,3 @@ Machine Learning | Python | Data Science | AI
 ## ⭐ Support
 
 If you found this project useful, consider giving the repository a ⭐ on GitHub.
-
-

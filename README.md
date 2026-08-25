@@ -152,9 +152,7 @@ The Streamlit application screenshot is available in the `screenshots` folder of
 
 Click the screenshot below to open the **full-size image**.
 
-[![Social Network Ads Purchase Prediction](https://github.com/shivani14012004/social-network-ads-purchase-prediction/blob/main/screenshots/app-interface.png.png
-?raw=true)](https://github.com/shivani14012004/social-network-ads-purchase-prediction/blob/main/screenshots/app-interface.png.png
-)
+[![Social Network Ads Purchase Prediction](https://github.com/shivani14012004/social-network-ads-purchase-prediction/blob/main/screenshots/app-interface.png?raw=true)](https://github.com/shivani14012004/social-network-ads-purchase-prediction/blob/main/screenshots/app-interface.png)
 
 ---
 
